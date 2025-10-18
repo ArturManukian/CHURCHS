@@ -1,0 +1,124 @@
+.section00
+  width: 100%
+  height: 100vh
+  background-color: #A952EC
+  display: flex
+
+  .text
+    width: 50%
+    text-align: center
+    padding: 30px 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    h1
+      font-size: 70px
+      margin: 20px
+    
+    em
+      font-size: 30px
+      margin-bottom: 20px
+      display: inline-block
+    
+    p
+      font-size: 15px
+  .photos
+    width: 50%
+    position: relative
+
+    .img
+      position: absolute
+      transition: all 0.5s ease
+      box-shadow: 0px 4px 15px rgba(0, 0, 1, 1)
+
+    .one
+      width: 300px
+      height: auto
+      right: 10px
+      top: 10px
+      border-radius: 45px
+      &:hover
+        transform: scale(1.02)
+
+    .two
+      width: 300px
+      height: auto
+      bottom: 10px
+      right: 10px
+      border-radius: 45px
+      &:hover
+        transform: scale(1.02)
+
+    .fore
+      width: 300px
+      height: auto
+      top: 100px
+      left: 0
+      margin-left: 25px
+      border-radius: 45px
+      &:hover
+        transform: scale(1.02)
+
+@media (max-width: 700px)
+  .section00
+    flex-direction: column
+    height: auto
+
+    .text
+      width: 100%
+      
+      h1
+        font-size: 50px
+    
+      em
+        font-size: 30px
+    .photos
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      gap: 20px
+
+      .img
+        position: relative
+        top: auto
+        left: auto
+        width: 80%
+        max-width: 250px
+        margin: 10px auto
+        margin-bottom: 20px
+        
+@media (min-width: 701px) and (max-width: 1024px)
+  .section00
+    height: auto
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding-bottom: 30px
+
+    .text
+      width: 80%
+      h1
+        font-size: 55px
+      em
+        font-size: 25px
+      p
+        font-size: 14px
+
+    .photos
+      width: 90%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      gap: 20px
+      margin-bottom: 20px
+
+      .img
+        position: relative
+        width: 45%
+        max-width: 300px
+        margin: 10px auto
