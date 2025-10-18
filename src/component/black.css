@@ -1,0 +1,15 @@
+.a{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    font-size: larger;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    justify-items: stretch;
+    margin: 0;
+    transform: matrix3d();
+    transition: all;
+    position: relative;
+    position: absolute;
+    justify-content: right;
+}
